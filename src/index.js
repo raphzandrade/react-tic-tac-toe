@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
 
 function Square(props) {
     return (
@@ -13,7 +13,7 @@ function Square(props) {
     );
 }
 
-class Board extends React.Component {
+class Board extends Component {
 
     renderSquare(i) {
         return (
@@ -47,7 +47,7 @@ class Board extends React.Component {
     }
 }
 
-class Game extends React.Component {
+class Game extends Component {
 
     constructor(props) {
         super(props);
