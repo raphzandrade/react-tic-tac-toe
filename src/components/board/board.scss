@@ -1,0 +1,20 @@
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+.board-row:first-child .square:first-of-type {
+    border-top-left-radius: 5px;
+}
+
+.board-row:first-child .square:last-of-type {
+    border-top-right-radius: 5px;
+}
+
+.board-row:last-child .square:first-of-type {
+    border-bottom-left-radius: 5px;
+}
+
+.board-row:last-child .square:last-of-type {
+    border-bottom-right-radius: 5px;
+}
